@@ -95,6 +95,7 @@
             "/": "/*/project/drawing_areas/*/drawing_log/view_fullscreen/*",
             "comment": "This Drawings feature is supported."
           },
+
           {
             "/": "/*/project/drawing_areas/*/drawing_log/*",
             "comment": "Support opening a particular drawing."
