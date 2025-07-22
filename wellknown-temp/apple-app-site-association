@@ -1,0 +1,132 @@
+{
+  "applinks": {
+    "apps": [],
+    "substitutionVariables": {
+      "pdmIntegrationItemType": [ "GenericToolItem", "Rfi::Question", "DiscussionResponse", "ActionPlans::Plan::Reference", "ActionPlans::Plan::TestRecord" ]
+    },
+    "details": [
+      {
+        "appIDs": ["T8XA36W3BQ.com.local.procore"],
+        "components": [
+          {
+            "/": "/*/project/punch_list/configure_tab",
+            "exclude": true,
+            "comment": "This is a web only feature."
+          },
+          {
+            "/": "/*/project/punch_list/recycle_bin_list",
+            "exclude": true,
+            "comment": "This is a web only feature."
+          },
+          {
+            "/": "/*/project/punch_list/*",
+            "comment": "Support all other Punch URLs."
+          },
+
+          {
+            "/": "/*/project/action_plans/settings/*",
+            "exclude": true,
+            "comment": "This is a web only feature."
+          },
+          {
+            "/": "/*/project/action_plans/plans/recycled*",
+            "exclude": true,
+            "comment": "This is a web only feature."
+          },
+          {
+            "/": "/*/project/action_plans/plans/*",
+            "comment": "Support all other Action Plan URLs."
+          },
+
+          {
+            "/": "/*/project/incidents/*",
+            "comment": "Support all Incident URLs."
+          },
+
+          {
+            "/": "/*/project/rfi/list",
+            "comment": "Support the RFI list."
+          },
+          {
+            "/": "/*/project/rfi/show/*",
+            "comment": "Support showing a particular RFI."
+          },
+
+          {
+            "/": "/*/project/checklists/lists/*",
+            "comment": "Support all Inspection URLs."
+          },
+
+          {
+            "/": "/*/project/coordination_issues/*",
+            "comment": "Support all Coordination Issue URLs."
+          },
+
+          {
+            "/": "/*/project/time_and_materials/*",
+            "comment": "Support all T&M Ticket URLs."
+          },
+
+          {
+            "/": "/*/project/generic_tool/show/*",
+            "comment": "Support showing a particular custom tool or correspondence type."
+          },
+          {
+            "/": "/*/project/generic_tools/show/*",
+            "comment": "Support showing a particular custom tool item or correspondence item."
+          },
+
+          {
+            "/": "/*/project/observations/items/*",
+            "comment": "Support showing a particular observation."
+          },
+
+          {
+            "/": "/project/directory/users/new/*",
+            "comment": "Support deep linking to the create contact form."
+          },
+
+          {
+            "/": "/open_procore_mobile_app",
+            "comment": "Support simply opening the app."
+          },
+
+          {
+            "/": "/*/project/drawing_areas/*/drawing_log/view_fullscreen/*",
+            "comment": "This Drawings feature is supported."
+          },
+          {
+            "/": "/*/project/drawing_areas/*/drawing_log/*",
+            "comment": "Support opening a particular drawing."
+          },
+
+          {
+            "/": "/webclients/host/companies/*/projects/*/tools/document-viewer/document_revision/*",
+            "?": { "item_type": "$(pdmIntegrationItemType)" },
+            "comment": "iOS app only supports opening PDM attachments on select item types."
+          },
+
+          {
+            "/": "/*/project/forms/*",
+            "comment": "Support showing a particular form"
+          },
+
+          {
+            "/": "/qrsticker/*",
+            "comment": "Support showing objects assigned to link from QR code sticker"
+          },
+
+          {
+            "/": "/*/project/submittal_logs/*",
+            "comment": "Support showing a particular submittal log."
+          },
+
+          {
+            "/": "/*/project/photos/take_photo/",
+            "comment": "Support taking a photo in the mobile app"
+          }
+        ]
+      }
+    ]
+  }
+}
